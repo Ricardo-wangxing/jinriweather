@@ -42,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607183912905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="今日天气">
+      <created>1607186486321</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607186486322</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,21 +179,21 @@
       <screen x="0" y="25" width="1280" height="719" />
     </state>
     <state width="609" height="163" key="GridCell.Tab.0.right/0.25.1280.719@0.25.1280.719" timestamp="1607181020163" />
-    <state x="141" y="25" width="997" height="719" key="SettingsEditor" timestamp="1607186428263">
+    <state x="141" y="25" width="997" height="719" key="SettingsEditor" timestamp="1607186560296">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
-    <state x="141" y="25" width="997" height="719" key="SettingsEditor/0.25.1280.719@0.25.1280.719" timestamp="1607186428263" />
-    <state x="240" y="121" key="Vcs.Push.Dialog.v2" timestamp="1607183928478">
+    <state x="141" y="25" width="997" height="719" key="SettingsEditor/0.25.1280.719@0.25.1280.719" timestamp="1607186560296" />
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2" timestamp="1607186490654">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
-    <state x="240" y="121" key="Vcs.Push.Dialog.v2/0.25.1280.719@0.25.1280.719" timestamp="1607183928478" />
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2/0.25.1280.719@0.25.1280.719" timestamp="1607186490654" />
     <state x="420" y="166" key="chooseDestDirectoryDialog" timestamp="1607183047734">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
     <state x="420" y="166" key="chooseDestDirectoryDialog/0.25.1280.719@0.25.1280.719" timestamp="1607183047734" />
-    <state x="410" y="277" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607183863121">
+    <state x="410" y="277" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1607186459134">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
-    <state x="410" y="277" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1280.719@0.25.1280.719" timestamp="1607183863121" />
+    <state x="410" y="277" key="git4idea.remote.GitConfigureRemotesDialog/0.25.1280.719@0.25.1280.719" timestamp="1607186459134" />
   </component>
 </project>
