@@ -214,6 +214,7 @@ public class Choose_AreaFragment extends Fragment {
         if (countyList.size() > 0){
             dataList.clear();
             for (County county : countyList){
+
                 dataList.add(county.getCountyName());
             }
             adapter.notifyDataSetChanged();

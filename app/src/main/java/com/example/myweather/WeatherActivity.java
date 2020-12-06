@@ -30,10 +30,14 @@ import com.example.myweather.util.HttpUtil;
 import com.example.myweather.util.Utility;
 
 import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.litepal.LitePal;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -126,10 +130,19 @@ public class WeatherActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 //待解决：解决搜索id不存在时候的问题
-
+                if(query.equals("710000")||query.equals("810000")||query.equals("820000")||
+                query.contains("台湾")||query.contains("香港")||query.contains("澳门")
+                ){
+                    Toast.makeText(WeatherActivity.this,"不支持查询港澳台",Toast.LENGTH_SHORT).show();
+                    return false;
+                }
                 //更新数据
-                requestWeather(query);
-                requestNowWeather(query);
+                requestLAL(query);
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(WeatherActivity.this);
+                String lal_code = prefs.getString("lal_code",null);
+                Log.d("is_get_data",lal_code);
+                requestWeather(lal_code);
+                requestNowWeather(lal_code);
 
                 //设置搜索框不可见
                 search_input.setVisibility(View.GONE);
@@ -205,7 +218,6 @@ public class WeatherActivity extends AppCompatActivity {
         String weatherString = prefs.getString("weather", null);
         String nowWeatherString = prefs.getString("nowWeather", null);
 
-        Log.d(TAG, "onCreate: xxxxxxxxxxxxxxxxxxxxxxxxxx");
         if (weatherString != null && nowWeatherString != null) {
             //有缓存时直接解析天气数据
             Weather weather = Utility.handleWeatherResponse(weatherString);
@@ -369,6 +381,49 @@ public class WeatherActivity extends AppCompatActivity {
             }
         });
     }
+
+    //根据地区查询
+    public void requestLAL(final String area_query){
+        Log.d(TAG, "requestLAL: " + area_query);
+        String LAL_api = "https://restapi.amap.com/v3/geocode/geo?address="+area_query+"&output=json&key=fd4cf7ce7ffc349dcb577ab0b0b3f909";
+//        String weatherUrl = "https://restapi.amap.com/v3/weather/weatherInfo?key=fd4cf7ce7ffc349dcb577ab0b0b3f909&city=" + weatherId + "&extensions=all&output=JSON";
+        final String L="";
+        HttpUtil.sendOkHttpRequest(LAL_api, new Callback() {
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                final String responseText = response.body().string();
+                String LAL_code ="";
+                try {
+                    JSONObject result = new JSONObject(responseText);
+                    LAL_code = result.getJSONArray("geocodes").getJSONObject(0).getString("adcode");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(WeatherActivity.this).edit();
+                editor.putString("lal_code",LAL_code);
+                editor.apply();
+
+            }
+
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(WeatherActivity.this,"获取未来天气信息失败",Toast.LENGTH_SHORT).show();
+                        //默认不刷新
+                        swipeRefresh.setRefreshing(false);
+                    }
+                });
+
+            }
+        });
+
+    }
+
+
+
 
     //根据天气id请求城市nowWeather信息
     public void requestNowWeather(final String weatherId){
