@@ -6,7 +6,6 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="WeatherActivity" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -17,14 +16,25 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="181195d1-c190-40a3-a677-f99e1400ad18" name="默认的" comment="今日天气">
+    <list default="true" id="181195d1-c190-40a3-a677-f99e1400ad18" name="默认的" comment="新增根据大致地理位置名称（如：大连理工大学、北京信息科技大学等）检索天气">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/Choose_AreaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/Choose_AreaFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/WeatherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/WeatherActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myweather/util/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607186568022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增根据大致地理位置名称（如：大连理工大学、北京信息科技大学等）检索天气">
+      <created>1607227081019</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607227081019</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,33 +194,46 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="今日天气" />
-    <option name="LAST_COMMIT_MESSAGE" value="今日天气" />
+    <MESSAGE value="新增根据大致地理位置名称（如：大连理工大学、北京信息科技大学等）检索天气" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增根据大致地理位置名称（如：大连理工大学、北京信息科技大学等）检索天气" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="134" key="GridCell.Tab.0.bottom" timestamp="1607226680009">
+    <state x="517" y="251" key="#通知" timestamp="1607227096687">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
+    <state x="517" y="251" key="#通知/0.25.1280.719@0.25.1280.719" timestamp="1607227096687" />
+    <state x="409" y="150" key="AndroidProcessChooserDialog" timestamp="1607269985063">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="409" y="150" key="AndroidProcessChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1607269985063" />
+    <state width="1238" height="211" key="GridCell.Tab.0.bottom" timestamp="1607270584633">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="211" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607270584633" />
     <state width="1238" height="134" key="GridCell.Tab.0.bottom/0.25.1280.719@0.25.1280.719" timestamp="1607226680009" />
-    <state width="1238" height="134" key="GridCell.Tab.0.center" timestamp="1607226680008">
-      <screen x="0" y="25" width="1280" height="719" />
+    <state width="1238" height="211" key="GridCell.Tab.0.center" timestamp="1607270584632">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="211" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607270584632" />
     <state width="1238" height="134" key="GridCell.Tab.0.center/0.25.1280.719@0.25.1280.719" timestamp="1607226680008" />
-    <state width="1238" height="134" key="GridCell.Tab.0.left" timestamp="1607226680008">
-      <screen x="0" y="25" width="1280" height="719" />
+    <state width="1238" height="211" key="GridCell.Tab.0.left" timestamp="1607270584631">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="211" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607270584631" />
     <state width="1238" height="134" key="GridCell.Tab.0.left/0.25.1280.719@0.25.1280.719" timestamp="1607226680008" />
-    <state width="1238" height="134" key="GridCell.Tab.0.right" timestamp="1607226680009">
-      <screen x="0" y="25" width="1280" height="719" />
+    <state width="1238" height="211" key="GridCell.Tab.0.right" timestamp="1607270584632">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607270584632" />
     <state width="1238" height="134" key="GridCell.Tab.0.right/0.25.1280.719@0.25.1280.719" timestamp="1607226680009" />
     <state x="141" y="25" width="997" height="719" key="SettingsEditor" timestamp="1607186560296">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
     <state x="141" y="25" width="997" height="719" key="SettingsEditor/0.25.1280.719@0.25.1280.719" timestamp="1607186560296" />
-    <state x="240" y="121" key="Vcs.Push.Dialog.v2" timestamp="1607186571076">
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2" timestamp="1607227083803">
       <screen x="0" y="25" width="1280" height="719" />
     </state>
-    <state x="240" y="121" key="Vcs.Push.Dialog.v2/0.25.1280.719@0.25.1280.719" timestamp="1607186571076" />
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2/0.25.1280.719@0.25.1280.719" timestamp="1607227083803" />
     <state x="420" y="166" key="chooseDestDirectoryDialog" timestamp="1607183047734">
       <screen x="0" y="25" width="1280" height="719" />
     </state>

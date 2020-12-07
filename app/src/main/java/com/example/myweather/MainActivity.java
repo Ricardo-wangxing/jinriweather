@@ -18,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
 
         //缓存数据的判断，如果有缓存的话直接打开显示天气界面
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         if (prefs.getString("weather",null) != null){
             Intent intent = new Intent(this, WeatherActivity.class);
             startActivity(intent);
             finish();
         }
+
     }
 }
